@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1>Problem B. 프리스틴 사생팬</h1>
+<div style="font-size:medium; line-height:30px;" id="problem_description">
+<p> 한동이는 걸그룹을 좋아한다. 프로듀스 101부터 쭉 봐왔던 나영이와 결경이, 그리고 시연이가 속해있는 걸그룹인 프리스틴을 좋아한다.
+이번에 발매한 프리스틴의 곡 WEE-WOO를 듣다가 한동이는 갑자기 나영이와 결경이, 그리고 시연이의 숙소에 방문 하려면 최소 몇 분이 걸리는지 알고 싶어졌다. 그래서 한동이는 자신이 가지고 있는 지도를 펼쳤지만 지도에는 숙소로 가는 길들의 최단 거리만이 나와있지 숙소와 한동이의 집을 바로 잇는 최단거리는 나와 있지 않았다. <br /><br />그래서 컴퓨터공학과인 한동이는 프로그래밍을 통해서 나영이와 결경이, 그리고 시연이의 숙소에 차례로 방문을 하고 집에 돌아오려면 최소 몇 미터를 걸어야 하는지 알아 보려고 한다. 불쌍한 한동이를 우리가 도와주자. 숙소까지 갈 수 있는 길이 없다면 한동이는 해당 연예인의 숙소까지는 가지 않는다.
+<br /><br />
+
+<h2>입력</h2>
+
+- 입력의 첫째 줄에는 지도의 Node의 개수인 N과 길의 개수 R이 주어진다. <br />
+- 지도는 그래프의 형태를 가진다.<br /><br />
+0 < N, R <= 1000 <br /><br />
+- 입력의 둘째 줄에는 한동이의 집, 나영이와 결경이, 그리고 시연이의 숙소를 나타내는 Node의 번호가 공백을 사이에 두고 차례대로 주어진다.<br />
+- 나영이와 결경이, 시연이중 두 명 이상이 같은 숙소에 살고 있을 수도 있다. <br />
+- 입력의 셋째 줄부터 R+2번째 줄까지 세 정수 M, K, D가 주어진다.<br />
+- 이는 M번 Node에서 K번 Node로 이어지는 양방향, 거리 D 미터의 길이 있다는 의미이다.<br /><br />
+0 < M, K, D <= 1000 <br /><br />
+
+<h2>출력</h2>
+
+한동이가 집에서 출발해서 나영이의 숙소를 들린 후 다음에 결경이의 숙소, 그리고 마지막으로 시연이의 숙소를 방문 한 다음 집에 돌아오려면 최소 몇 분이 걸리는지 한 줄에 출력하여라. 반드시 정답이 있는 경우만 주어진다.
+
+<h4>Sample Input</h4>
+<p>
+10 6<br>
+1 2 3 4<br>
+1 2 10<br>
+1 5 2<br>
+2 5 3<br>
+5 3 2<br>
+1 3 7<br>
+3 4 5<br>
+</p>
+<h4>Sample Output</h4>
+<p>24</p>
+<form method="get" action="problemB/download">
+<button type="submit">Download the input</button>
+</form>
+<form action="problemB/fileupload" method="post" enctype="multipart/form-data">
+<input type="file" name="filetoupload"><br>
+<input type="submit">
+</form>
+</body>
+</html>

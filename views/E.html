@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1>Problem E. 겹치면 죽는다</h1>
+<div style="font-size:medium; line-height:30px;" id="problem_description">
+<p> 한동이는 좌표평면 위에 선분을 놓는 게임을 하고 있다. 이 게임에는 특수한 룰이 있어서, 좌표 평면 위에 선분이 겹치면 그 즉시 게임오버가 된다. 좌표평면 위에는 이미 임의의 숫자의 선분이 놓여져 있고, 한동이는 해당 좌표평면 위에 선분을 놓는다. 한동이가 놓고싶어하는 선분의 후보를 받아, 해당 후보를 놓으면 게임오버가 되는지 아닌지 판단하는 프로그램을 작성하시오.
+<br /><br />
+<h2>입력</h2>
+- 입력은 input.txt로 주어진다.<br>
+- 입력의 첫째 줄에 좌표평면 위에 이미 놓여있는 선분의 수 정수 N이 주어진다.<br /><br />
+0 < N <= 100 <br /><br />
+- 입력의 둘째 줄에 좌표평면의 가로와 세로의 길이인 정수 M이 주어진다.<br /><br />
+0 <= M <= 1000 <br /><br />
+- 그 다음 줄부터 기존에 있는 선분을 잇는 점 두 개의 x, y 좌표인 x1 y1 x2 y2가 공백을 사이에 두고 N개 주어진다.<br /><br />
+0 <= x1 , y1, x2, y2 < M     x1 != x2 && y1 != y2
+<br /><br />
+- 그 다 줄에 한동이의 총 선택의 수인 K가 주어진다.<br /><br />
+0 < K <= 1000 <br /><br />
+- 그 다음 줄부터 한동이가 놓을 선분을 잇는 점 두 개의 x, y 좌표인 x1 y1 x2 y2가 공백을 사이에 두고 K개 주어진다.<br /><br />
+0 <= x1 , y1, x2, y2 < M     x1 != x2 && y1 != y2
+<br /><br />
+<h2>출력</h2>
+한동이의 각 선택 후보마다 해당 후보를 놓았을 때 게임오버가 된다면 die를, 아니라면 live를 한 줄에 출력한다. <br />한동이의 각 후보들은 독립적으로 작용하며 전의 후보가 현재의 후보에 영향을 끼치지 않는다.
+
+</p>
+<h4>Sample Input</h4>
+<p>
+3<br>
+10<br>
+0 0 10 10<br>
+1 1 1 5<br>
+2 9 4 9<br>
+3<br>
+3 3 7 7<br>
+5 1 8 1<br>
+0 10 10 0<br>
+</p>
+<h4>Sample Output</h4>
+<p>
+live<br>
+live<br>
+die<br>
+</p>
+<form method="get" action="problemE/download">
+<button type="submit">Download the input</button>
+</form>
+<form action="problemE/fileupload" method="post" enctype="multipart/form-data">
+<input type="file" name="filetoupload"><br>
+<input type="submit">
+</form>
+</body>
+</html>

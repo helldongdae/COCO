@@ -1,11 +1,39 @@
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 <body>
-<h1>Problem A. Simple Addition</h1>
-<p>Write a program which receives two integers as its input and prints out the result of the addition of two numbers.</p>
-<p>Input</p>
-<p>5 2</p>
-<p>Output</p>
-<p>7</p>
+<h1>Problem A. 상상랩 자리 잡기</h1>
+<div style="font-size:medium; line-height:30px;" id="problem_description">
+<p> 많은 한동인들은 모임 장소를로 잡을 때 상상랩을 이용한다. 어느 날 상상랩 앞을 지나가던 한동이는 사람들이 언제부터 언제까지 상상랩을 사용하기 원하는지 스케쥴을 쓴 종이가 붙어 있는 것을 보게 되었다. 그걸 본 한동이는 사람들의 스케줄이 주어 질 때, 중복 없이 최대 몇 팀이 하루에 상상랩을 쓸 수 있을지 궁금해졌다. 팀별로 스케줄이 주어 졌을 때, 하루에 최대 몇 팀이 상상랩을 이용 할 수 있는지 알아내는 프로그램을 작성하자.
+<br /><br />
+
+<h2>입력</h2>
+
+- 입력은 input.txt로 주어진다. 입력의 첫 줄에는 테스트 케이스의 개수가 주어진다.<br>
+- 각 테스트 케이스의 첫째 줄에는 상상랩을 예약하고 싶은 팀의 수인 정수 N이 주어진다.<br /><br />
+0 <= N < 30<br /><br />
+- 각 테스트 케이스의 둘째 줄부터 N+1줄까지 한 줄에 하나씩 모든 팀의 스케줄인 정수 M, K가 주어진다. <br />
+- 이는 해당 팀이 M시부터 시작해서 K시까지 모임을 가질 것이라는 의미이다.<br /><br />
+0 <= M < K <= 24<br /><br />
+- 모든 팀은 정확한 시간에 모임을 시작해서 정확한 시간에 모임을 마치고, 한 팀이 모임을 마친 직후, 다른 팀이 즉시 모임을 시작 할 수 있다. <br /><br />
+
+<h2>출력</h2>
+
+상상랩을 이용 가능한 최대 팀의 개수를 각 테스트 케이스 당 한 개의 정수로 한 줄에 하나씩 output.txt에 출력하여라.
+</p>
+<h4>Sample Input</h4>
+<p>
+1<br>
+5<br>
+0 10<br>
+1 3<br>
+2 5<br>
+6 10<br>
+12 20<br>
+</p>
+<h4>Sample Output</h4>
+<p>3</p>
 <form method="get" action="problemA/download">
 <button type="submit">Download the input</button>
 </form>
